@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Translate</h1>
+<input id="input" type="text">
+<button onclick="seach()">seach</button>
+<script>
+    let arrviet = ["thích", "ghét", "đỏ", "xanh", "đen", "hồng", "chó", "mèo","xin chào","tạm biệt"," vấn đề"]
+    let arrEnl = ["like", "hate", "red", "green", "black", "pink", "dog", "cat","hello","good bye","problem"]
+
+    function seach() {
+        let translate = document.getElementById("input").value
+        let check = false;
+        let i
+        for (i = 0; i < arrviet.length; i++) {
+            if (translate === arrviet[i]) {
+                check = true;
+                break
+            }
+        }
+
+        if (check) {
+            alert(arrEnl[i])
+        } else {
+            alert("Not found")
+        }
+    }
+
+</script>
+</body>
+</html>
